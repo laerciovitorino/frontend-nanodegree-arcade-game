@@ -1,6 +1,21 @@
-frontend-nanodegree-arcade-game
-===============================
+# Frogger Arcade Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This README file describes how to run and play the Frogger Arcade Game available in this project.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+### Run the game
+Run this game is super straightforward. You just need to, first download the whole project, then open the `index.html` file in a browser of your like. And that is it! The game is already running.
+
+### Play the game
+To play this game you just need to use the four arrow keys on your keyboard, as follows:
+* **Up** key for moving the player up;
+* **Down** key for moving the player down;
+* **Left** key for moving the player to the left;
+* **Right** key for moving the player to the right;
+
+### Rules
+There are a few basic rules to be aware of when playing this game
+1. The player can't go beyond the limits of the screen;
+2. Wherever the player hit a bug(enemy), it's considered the player lost the
+turn and the player character is put on the initial position again;
+3. If the player reach the water on the top part of the screen, it's considered
+the player won and once again, the player character is put on the initial position.
