@@ -48,7 +48,6 @@ Enemy.prototype.update = function(dt) {
   // all computers.
   if (this.x < SCREEN_THR) {
     this.x += this.speed;
-    this.x * dt;
   } else {
     setEnemyParams(this);
   }
@@ -63,12 +62,14 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 var Player = function() {
+  this.x = PLAYER_IN_X_POS;
+  this.y = PLAYER_IN_Y_POS;
   this.sprite = 'images/char-boy.png';
 };
 
 // Update the player's position
 Player.prototype.update = function(dt) {
-    this.x * dt;
+    // this.x * dt;
 };
 
 // Draw the player on the screen
@@ -103,6 +104,7 @@ Player.prototype.handleInput = function(allowedKeys) {
       if (this.x < BOTTOM_RIGHT_THR) {
         this.x += X_STEP;
       }
+      break;
     default:
   }
   this.render();
